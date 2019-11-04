@@ -34,7 +34,6 @@ function onClick(){
             p.innerText = 'Not a number!'
             div.append()  
         }
-        return false
     }
 
 // console.log(onClick("p",50));
