@@ -1,14 +1,11 @@
-let secret = Math.floor(Math.random()*100+1)
+let secret = Math.floor(Math.random()*100)+1
 console.log(secret)
-let input = Number(document.querySelector('.inputnumber').value)
+let yourGuess = document.querySelector('.inputnumber')
 let startClick = document.querySelector('.guess')
-// function onStart(){
-//     Math.floor(Math.random()*100)
-//     console.log(Math.floor(Math.random()*100))
-    
-// }
+
 
 function onClick(){
+    let input = Number(yourGuess.value)
     if(secret == input){
         let div = document.querySelector('div')
         let itemPrototype = document.querySelector('.computeroutput')
@@ -35,8 +32,6 @@ function onClick(){
             div.append()  
         }
     }
-
-// console.log(onClick("p",50));
 
 startClick.addEventListener('click', onClick)
 
