@@ -1,0 +1,23 @@
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+.userinput{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px;
+}
+button{
+    margin-top: 10px;
+}
+.computeroutput{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
