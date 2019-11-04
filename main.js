@@ -1,15 +1,14 @@
-let startClick = document.querySelector('.guess')
 let secret = Math.floor(Math.random()*100+1)
 console.log(secret)
-let input = document.querySelector('.inputnumber').value
-
+let input = Number(document.querySelector('.inputnumber').value)
+let startClick = document.querySelector('.guess')
 // function onStart(){
 //     Math.floor(Math.random()*100)
 //     console.log(Math.floor(Math.random()*100))
     
 // }
-input.addEventListener('dblclick', onClick)
-function onClick(secret, input){
+
+function onClick(){
     if(secret == input){
         let div = document.querySelector('div')
         let itemPrototype = document.querySelector('.computeroutput')
@@ -35,8 +34,13 @@ function onClick(secret, input){
             p.innerText = 'Not a number!'
             div.append()  
         }
+        return false
     }
 
 // console.log(onClick("p",50));
+
+startClick.addEventListener('click', onClick)
+
+
 
 
