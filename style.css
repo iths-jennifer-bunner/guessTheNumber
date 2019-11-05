@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 100px;
+    margin: 100px 300px auto 300px;
 }
 .userinput{
     display: flex;
@@ -20,4 +20,16 @@ button{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+h1{
+    font-family: 'McLaren', cursive;
+}
+p{
+    font-family: 'Cabin', sans-serif;
+}
+button{
+    font-family: 'Cabin', sans-serif;
+}
+p.answer{
+    font-size: 35px;
 }
